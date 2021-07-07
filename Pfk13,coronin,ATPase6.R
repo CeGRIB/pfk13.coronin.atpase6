@@ -1,3 +1,5 @@
+############ R Script ##############
+
 #load the required packages
 library(sf)
 library(raster)
@@ -62,7 +64,7 @@ plot(kelch13["Val_and_Ass"])
 plot(kelch13["A578S_prevalence"])
 
 
-#plot pfk13 Unique SNP
+#plot pfk13 Unique SNP   #### Figure 6a #######
 tm_shape(kelch13) + tm_polygons("Unique_SNPs",
                                 style = "fixed",
                                 palette = colorRampPalette(c("yellow", "gold",
@@ -78,7 +80,7 @@ tm_shape(kelch13) + tm_polygons("A578S_prevalence",
                                 breaks = c(1,2,3, 6, 9, 12, 15, 18, 21))
 
 
-#plot pfk13 Total SNP
+#plot pfk13 Total SNP         ######## Figure 6b ##########
 tm_shape(kelch13) + tm_polygons("Total_SNP",
                                 style = "fixed",
                                 palette = colorRampPalette(c("aliceblue", "green", "greenyellow", "yellow",
@@ -104,7 +106,7 @@ a = tm_shape(kelch13) + tm_polygons("ATPase6_Unique_SNP",
 #view the plot
 a
 
-#ATPase6_Total_SNP
+#ATPase6_Total_SNP    ####### Figure 8 ###########
 b = tm_shape(kelch13) + tm_polygons("ATPase6_Total_SNP",
                                     style = "fixed",
                                     palette = colorRampPalette(c("yellow", "green","darkorange", "pink", "deeppink", "magenta", "purple", "blue"))(30),
@@ -118,7 +120,7 @@ tmap_arrange(a,b)
 
 #Pfcoronin plots
 
-#Pfcoronin_Unique_SNP
+#Pfcoronin_Unique_SNP     ###### Figure 9 #########
 c = tm_shape(kelch13) + tm_polygons("Pfcoronin_Unique_SNP",
                                     style = "fixed",
                                     palette = colorRampPalette(c("yellow", "green", "green", "blue"))(30),
