@@ -10,7 +10,7 @@ This file contains the line of codes for maps used in the article
 
 Authors
 1. Afolabi OWOLOYE      afolabiowoloye@yahoo.com
-2. Michael J. OLUFEMI   olufemim3gmail.com
+2. Michael J. OLUFEMI   olufemim3@gmail.com
 3. Kolapo M. OYEBOLA    oyebolakolapo@yahoo.com
 
 @comments and clarifications to Afolabi   afolabiowoloye@yahoo.com
